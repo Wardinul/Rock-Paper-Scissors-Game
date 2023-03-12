@@ -1,0 +1,96 @@
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: .5s;
+}
+
+body{
+    background: #457fca;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #5691c8, #457fca);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #5691c8, #457fca); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    height: 100vh;
+    border: 15px solid #00000025;
+}
+
+.container{
+    height: 70vh;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.score-board{
+    background-color: #099ed4;
+    color: white;
+    font-size: larger;
+    font-family: 'Fredoka One';
+}
+
+.game{
+    height: 100%;
+    background-image: url(https://wallpaperaccess.com/full/5580296.png);
+    background-size: cover;
+    background-position: -25em 38%;
+}
+
+.game > div{
+    position: relative;
+    font-size: clamp(35px, 5vw, 50px);
+    cursor: pointer;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 2px, rgba(0, 0, 0, 0.3) 0px 1px 1px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    overflow: hidden;
+    color: white;
+}
+
+.game > div span{
+    position: relative;
+    z-index: 2;
+    font-family: 'Fredoka One';
+}
+
+.game > div span i{
+    margin: 0 .5em;
+}
+
+.game > div::before{
+    content: '';
+    position: absolute;
+    background-color: #099ed4c2;
+    width: 0;
+    height: 100%;
+    left: 50%;
+}
+
+.game > div:hover::before{
+    width: 100%;
+    left:0;
+}
+
+.game > div:hover{
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.result-container{
+    background-color: #28B4E5;
+    height: 100%;
+}
+
+.result-container div{
+    height: fit-content;
+    border: 4px solid #099ed4;
+    border-radius: 5px;
+}
+
+#final-result{
+    display: none;
+    color: white;
+    font-size: clamp(35px, 5vw, 60px);
+    font-family: 'Fredoka One';
+    height: 100%;
+    background: rgb(40,180,229);
+    background: linear-gradient(185deg, rgba(40,180,229,1) 0%, rgba(66,196,241,1) 100%); 
+}
+
