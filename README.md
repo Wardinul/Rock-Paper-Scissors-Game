@@ -19,4 +19,4 @@ A personal project of mine where I focused more on JavaScript and interactivity.
 
 ## Gifs
 
-
+![](https://github.com/Wardinul/Rock-Paper-Scissors-Game/blob/main/Game.gif)
